@@ -10,7 +10,17 @@ namespace Week2_Classes
     {
         static void Main(string[] args)
         {
-            Book book = new Book();
+            Book book = new Book(); //!a declaration and an intiarlization of Book at the same time/on the same line;
+            Book myBook2; //!Declaration
+            myBook2 = new Book(); //! Initilization becasue we are calling the constructer
+
+            DateTime dt = new DateTime(2000,1,20);
+            DateTime dt2 = new DateTime(2000,1,20,1,1,1);
+
+
+            Book myBook3 = new Book("3456789"); //! this constroctor will assign immediant ly isbn into the field/property
+            myBook2.Name = "Test";
+            myBook2.Year = 2000;
 
             //! class: is allowing us to define the entity e.g. Book
             //! Object: is allowing us to personalize the book

@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 //!private - is the most restrictive one. it makes the component accissible only form the class where it is declared.
 //!protected - it makes the component accessible from the class where it is declared and also from any inherited classes
 //!internal - it makes the component accessible from inside the same library/project/namespace
-namespace Week2_Classes
+namespace Week2_Inheretence
 {
     //! enums are predefined sets which you cannot dynamically modify
-    public enum GenreType {Horror=1,Fiction=2,SciFi=3,None=4}
+    public enum GenreType { Horror = 1, Fiction = 2, SciFi = 3, None = 4 }
 
     //! a class is a representation of an entity , which is often referred to as a template 
     public class Book
@@ -34,7 +34,7 @@ namespace Week2_Classes
 
         public Book(string isbn) : this() //! runs the constroctor declared inside the same class
         {
-            
+
             Isbn = isbn;
         }
 
@@ -42,14 +42,15 @@ namespace Week2_Classes
         //! Fields: the containers where data is actually stored
         private string name;
         private string auther;
-        private bool available;
+        protected bool available;
 
 
         //! the properties are the characteristics that make up the book
         //! through the properties we can GET or SET values
         //! preoprty is like the gateway to access the field via the GETTERS and SETTERS
         //! hence with properties i can controll the access/filter the data that goes into or out of the field 
-        public string Name {  
+        public string Name
+        {
             get
             {
                 return name;
@@ -58,23 +59,25 @@ namespace Week2_Classes
             {
                 name = value.ToUpper();
             }
-        }   
+        }
         public string Author { get; set; }
         public int Year { get; set; }
         public string Isbn { get; set; }
         public string Publisher { get; set; }
 
-        public GenreType Genre { get; set;}
+        public GenreType Genre { get; set; }
 
         public List<string> HistoryOfIdsThatBorrowedTheBook { get; set; }
 
-        public bool Available { 
-            get 
+        public bool Available
+        {
+            get
             {
                 return available;
-            } 
+            }
         }
-        public string Auther {
+        public string Auther
+        {
             get
             {
                 string masked = "";
@@ -84,11 +87,11 @@ namespace Week2_Classes
 
                 }
                 return masked;
-            } 
+            }
             set
             {
                 auther = value;
-            } 
+            }
         }
 
 
@@ -98,7 +101,7 @@ namespace Week2_Classes
 
         public void Borrow(string isbn, string idCardNo)
         {
-            if(Available)
+            if (Available)
             {
                 available = false;
                 HistoryOfIdsThatBorrowedTheBook.Add(idCardNo);
