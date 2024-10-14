@@ -112,6 +112,14 @@ namespace Week2_Inheretence
         {
             return DateTime.Now.Year - Year;
         }
+
+
+        //! virtual enables the method it marks to be re-implemented in the inhertence classes
+        //! it enables dynamic ploymorphism
+        public virtual void Print()
+        {
+            Console.WriteLine($"Name: {name} , Year: {Year} , Author: {Author}");
+        }
     }
 
 }

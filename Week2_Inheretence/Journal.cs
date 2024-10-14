@@ -26,9 +26,20 @@ namespace Week2_Inheretence
            available = true;
         }
 
-        public Journal(string isbn, int issueNo) : base(isbn) //! runs the constroctor declared inside the same class
+        public Journal(string isbn, int issueNo , int month) : base(isbn) //! runs the constroctor declared inside the same class
         {
+            Month = month;
             IssueNo = issueNo;
         }
+
+        public override void Print()
+        {
+            base.Print(); //this will execute Book.Print
+            Console.WriteLine($" IssueNo: {IssueNo} , Month: {new DateTime(Year , Month , 1).ToString("MMMM")}");
+
+            Console.WriteLine();
+        }
+
+
     }
 }

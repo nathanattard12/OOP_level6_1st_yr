@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{767747F2-AD39-41AB-8568-C96E351E2184}</ProjectGuid>
+    <ProjectGuid>{51F9A23F-BDEA-4CE3-8AB8-6762435A114E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Week2_Inheretence</RootNamespace>
-    <AssemblyName>Week2_Inheretence</AssemblyName>
+    <RootNamespace>Week3_Ploymorphism</RootNamespace>
+    <AssemblyName>Week3_Ploymorphism</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book.cs" />
-    <Compile Include="Journal.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="Cylinder.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScientificJournal.cs" />
+    <Compile Include="Sphere.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
