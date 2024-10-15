@@ -15,7 +15,7 @@ namespace Week3_Ploymorphism
             // you add the shape to list
             //get back to main menu
             //if then the user chooses find perminter, all perimters of all shapes in list most be shown on screen
-            //depneding on what the user shape choose ank for details
+            //depneding on what the user shape choose ank for detailss
 
         }
     }
