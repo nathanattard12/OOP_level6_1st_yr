@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Week3_Ploymorphism
 {
+    
+    //An abstract class allows you to implement partially some memebers within
+    //in the below example properties can be implemented
+    //but the methods we have to postpone the implementation to the inheriting classes
     public class Point
     {
         /* 
@@ -17,7 +21,7 @@ namespace Week3_Ploymorphism
          * 3D cylinder > sPHERE. int z, double height; FindPerimiter(), FindArea(),Find volume
          
          */
-        /*
+        
         int x;
         int y;
 
@@ -32,11 +36,10 @@ namespace Week3_Ploymorphism
             get { return y; }
             set { y = value; }
         }
-        public Point(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-        */
+
+
+        
+     
+        
     }
 }
