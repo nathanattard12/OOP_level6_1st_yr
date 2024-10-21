@@ -48,7 +48,7 @@ namespace Week4_AbstractClassesAndInterfaces
 
         public void Sort(List<Log> logs)
         {
-            logs.Sort((log1, log2) => log1.Timestamp.CompareTo(log2.Timestamp);
+            logs.Sort((log1, log2) => log1.Timestamp.CompareTo(log2.Timestamp));
         }
     }
 }
