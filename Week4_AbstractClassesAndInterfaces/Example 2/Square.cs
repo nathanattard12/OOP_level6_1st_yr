@@ -17,9 +17,6 @@ namespace Week4_AbstractClassesAndInterfaces.Example_2
         {
             return (Length + Length) * 2;
         }
-
-
-
     }
 
   
